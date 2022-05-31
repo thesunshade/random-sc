@@ -54,6 +54,11 @@ body {
   text-align: center;
 }
 
+.sutta {
+  max-width: 40rem;
+  margin: auto;
+}
+
 p {
   margin-bottom: 1.5rem;
   color: var(--text);
@@ -61,6 +66,7 @@ p {
 
 h1 {
   color: var(--text);
+  padding-top: 2rem;
 }
 
 p.sc-link {
