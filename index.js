@@ -1,11 +1,6 @@
 const suttaArea = document.getElementById("sutta");
-const homeButton = document.getElementById("home-button");
 
 import { ids } from "./ids.js";
-
-homeButton.addEventListener("click", () => {
-  document.location.search = "";
-});
 
 function buildSutta(slug) {
   slug = slug.toLowerCase();
@@ -44,7 +39,7 @@ if (document.location.search) {
   buildSutta(document.location.search.replace("?", ""));
 } else {
   suttaArea.innerHTML = `<div class="instructions">
-  <p>Click it!</p>
+  Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It's just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.
 </div>`;
 }
 

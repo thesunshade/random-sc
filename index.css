@@ -2,7 +2,7 @@
 
 :root {
   --text: bisque;
-  --accent: #ffc000;
+  --accent: rgb(208, 177, 139);
   --disabled: #ffe8a390;
   --background: #591c05;
 }
@@ -16,13 +16,18 @@ body {
 #form {
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
 #citation {
   border-radius: 0;
   border: 1px solid;
+}
+
+.mini-instruction {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
 .get-random {
@@ -36,6 +41,8 @@ body {
   padding: 0.5rem;
   border: none;
   top: 0;
+  width: 20rem;
+  margin: auto;
 }
 
 .get-random:hover {
@@ -51,6 +58,14 @@ body {
 
 .home-button svg {
   margin-top: 3px;
+}
+
+.instructions {
+  color: var(--accent) !important;
+  margin: auto;
+  max-width: 30rem;
+  font-size: 0.8rem;
+  padding-top: 2rem;
 }
 
 p {
@@ -84,22 +99,6 @@ span.eng-lang {
   display: block;
 }
 
-p span.pli-lang {
-  color: gray;
-  font-family: sans-serif;
-  font-size: 1rem;
-}
-
-p span.pli-lang,
-h1 span.pli-lang,
-h2 span.pli-lang,
-h3 span.pli-lang,
-h4 span.pli-lang,
-h5 span.pli-lang {
-  color: #5a5a5a;
-  font-family: sans-serif;
-}
-
 .button-area {
   position: fixed;
   right: 10px;
@@ -107,30 +106,9 @@ h5 span.pli-lang {
   /* text-align: center; */
 }
 
-#sutta.hide-pali p span.pli-lang,
-#sutta.hide-pali h2 span.pli-lang,
-#sutta.hide-pali h3 span.pli-lang,
-#sutta.hide-pali h4 span.pli-lang,
-#sutta.hide-pali li span.pli-lang {
-  display: none !important;
-}
-
-#sutta.hide-pali p span.eng-lang {
-  display: inline !important;
-}
-
-#sutta.hide-pali p {
-  margin: 0px 0px 0.8rem 0rem;
-}
-
-#sutta.hide-pali blockquote.gatha p span.verse-line span.eng-lang {
-  display: block !important;
-  margin-bottom: 0rem;
-}
-
-span.eng-lang {
+/* span.eng-lang {
   margin-bottom: 0.4rem;
-}
+} */
 
 header ul {
   list-style: none;
@@ -140,7 +118,7 @@ header ul {
 
 header ul li {
   text-align: center;
-  color: #5a5a5a;
+  color: var(--accent);
 }
 
 @media only screen and (max-width: 975px) {
