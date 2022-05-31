@@ -4,7 +4,7 @@ const suttaArea = document.getElementById("sutta");
 
 function buildSutta(slug) {
   slug = slug.toLowerCase();
-  let html = "";
+
   const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
     .then(response => response.json())
     .catch(error => {
@@ -18,7 +18,7 @@ function buildSutta(slug) {
   Promise.all([contentResponse]).then(responses => {
     const [contentResponse] = responses;
     const { html_text, translation_text, keys_order } = contentResponse;
-
+    let html = "";
     keys_order.forEach(segment => {
       if (translation_text[segment] === undefined) {
         translation_text[segment] = "";

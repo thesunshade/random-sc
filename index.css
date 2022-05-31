@@ -86,9 +86,9 @@ p.sc-link a img:hover {
   filter: opacity(100%);
 }
 
-span.eng-lang {
+/* span.eng-lang {
   display: block;
-}
+} */
 
 .button-area {
   position: fixed;
