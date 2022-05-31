@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+
+:root {
+  --text: bisque;
+  --accent: #ffc000;
+  --disabled: #ffe8a390;
+  --background: #591c05;
+}
+
 body {
   margin: 1rem 3rem;
+  background-color: var(--background);
+  font-family: "Source Serif Pro", serif;
 }
 
 #form {
@@ -14,21 +25,28 @@ body {
   border: 1px solid;
 }
 
-#citation:focus {
-  background-color: palegoldenrod;
-  outline: none;
+.get-random {
+  position: relative;
+  top: 0;
+  transition: all ease 0.2s;
+  background-color: var(--text);
+  color: var(--background);
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border: none;
+  top: 0;
 }
 
-.go-button {
-  border-radius: 0;
-  border: 1px solid;
-  border-left: 0px;
+.get-random:hover {
+  top: -3px;
 }
 
 .home-button {
   border: none;
   background: none;
   margin-left: 5px;
+  display: none;
 }
 
 .home-button svg {
@@ -37,12 +55,28 @@ body {
 
 p {
   margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+h1 {
+  color: var(--text);
 }
 
 p.sc-link {
   text-align: center;
   margin-bottom: 0rem !important;
   margin-top: 1rem !important;
+}
+p.sc-link a img {
+  filter: opacity(50%);
+  position: relative;
+  top: 0;
+  transition: all ease 0.5s;
+}
+
+p.sc-link a img:hover {
+  top: -3px;
+  filter: opacity(100%);
 }
 
 span.pli-lang,
