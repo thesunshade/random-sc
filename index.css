@@ -3,7 +3,7 @@
 :root {
   --text: bisque;
   --accent: rgb(208, 177, 139);
-  --disabled: #ffe8a390;
+  --disabled: #61230c;
   --background: #4b1704;
 }
 
@@ -66,6 +66,7 @@ body {
   max-width: 30rem;
   font-size: 0.8rem;
   padding-top: 2rem;
+  padding-bottom: 7rem;
   text-align: center;
 }
 
@@ -158,4 +159,9 @@ br {
 .links-area a:hover {
   top: -3px;
   filter: opacity(100%);
+}
+
+hr {
+  border: 0.5px solid rgba(208, 177, 139, 0.43);
+  width: 70%;
 }
