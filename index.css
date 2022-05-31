@@ -20,11 +20,6 @@ body {
   justify-content: center;
 }
 
-#citation {
-  border-radius: 0;
-  border: 1px solid;
-}
-
 .mini-instruction {
   color: var(--accent);
   margin-bottom: 0.5rem;
@@ -47,17 +42,6 @@ body {
 
 .get-random:hover {
   top: -3px;
-}
-
-.home-button {
-  border: none;
-  background: none;
-  margin-left: 5px;
-  display: none;
-}
-
-.home-button svg {
-  margin-top: 3px;
 }
 
 .instructions {
@@ -96,7 +80,6 @@ p.sc-link a img:hover {
   filter: opacity(100%);
 }
 
-span.pli-lang,
 span.eng-lang {
   display: block;
 }
@@ -107,10 +90,6 @@ span.eng-lang {
   top: 10px;
   /* text-align: center; */
 }
-
-/* span.eng-lang {
-  margin-bottom: 0.4rem;
-} */
 
 header ul {
   list-style: none;

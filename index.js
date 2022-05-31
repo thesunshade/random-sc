@@ -1,6 +1,6 @@
-const suttaArea = document.getElementById("sutta");
-
 import { ids } from "./ids.js";
+
+const suttaArea = document.getElementById("sutta");
 
 function buildSutta(slug) {
   slug = slug.toLowerCase();
