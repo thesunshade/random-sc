@@ -5,7 +5,7 @@ const suttaArea = document.getElementById("sutta");
 function buildSutta(slug) {
   slug = slug.toLowerCase();
 
-  const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
+  const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sabbamitta?lang=de`)
     .then(response => response.json())
     .catch(error => {
       console.log("Something went wrong");
@@ -27,7 +27,7 @@ function buildSutta(slug) {
       // openHtml = openHtml.replace(/^<span class='verse-line'>/, "<br><span class='verse-line'>");
       html += `${openHtml}<span class="eng-lang" lang="en">${translation_text[segment]}</span>${closeHtml}\n\n`;
     });
-    const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/en/sujato"><img height="20px" src="./images/favicon-sc.png"></a></p>`;
+    const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/de/sabbamitta"><img height="20px" src="./images/favicon-sc.png"></a></p>`;
     suttaArea.innerHTML = scLink + html;
     const pageTile = document.querySelector("h1");
     document.title = pageTile.textContent;
