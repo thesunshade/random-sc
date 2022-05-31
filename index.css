@@ -36,12 +36,12 @@ body {
   transition: all ease 0.2s;
   background-color: var(--text);
   color: var(--background);
-  font-family: "Source Serif Pro", serif;
+  font-family: sans-serif;
   font-size: 1.3rem;
   padding: 0.5rem;
   border: none;
   top: 0;
-  width: 20rem;
+  width: 10rem;
   margin: auto;
 }
 
