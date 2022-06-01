@@ -1,7 +1,14 @@
 import { ids } from "./ids.js";
-const randomButton = document.getElementById("get-random");
 
+const randomButton = document.getElementById("get-random");
 const suttaArea = document.getElementById("sutta");
+
+randomButton.addEventListener("click", e => {
+  e.preventDefault();
+  const randomNumber = Math.floor(Math.random() * ids.length);
+  console.log(ids[randomNumber]);
+  document.location.search = "?" + ids[randomNumber];
+});
 
 function buildSutta(slug) {
   slug = slug.toLowerCase().trim();
@@ -35,13 +42,3 @@ if (document.location.search) {
   Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It's just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.
 </div>`;
 }
-
-randomButton.addEventListener("click", e => {
-  e.preventDefault();
-  const randomNumber = Math.floor(Math.random() * ids.length);
-  console.log(ids[randomNumber]);
-  // buildSutta(ids[randomNumber]);
-  document.location.search = "?" + ids[randomNumber];
-});
-
-// citation.value = document.location.search.replace("?", "");
