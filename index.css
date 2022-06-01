@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 :root {
-  --text: bisque;
-  --accent: rgb(208, 177, 139);
+  --text: #ffe4c4;
+  --accent: #d0b18b;
   --disabled: #61230c;
+  /* --background: white; */
   --background: #4b1704;
 }
 
 body {
   margin: 1rem 3rem;
   background-color: var(--background);
-  font-family: "Source Serif Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #form {
@@ -31,7 +32,7 @@ body {
   transition: all ease 0.2s;
   background-color: var(--text);
   color: var(--background);
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.3rem;
   padding: 0.5rem;
   border: none;
@@ -49,14 +50,20 @@ body {
   margin: auto;
   max-width: 30rem;
   font-size: 0.8rem;
-  padding-top: 2rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+
   text-align: center;
+}
+
+.instructions a {
+  color: inherit;
 }
 
 .sutta {
   max-width: 40rem;
   margin: auto;
+  line-height: 1.5;
+  /* letter-spacing: 0.5px; */
 }
 
 p {
@@ -139,11 +146,11 @@ br {
   position: relative;
   top: 0;
   transition: all ease 0.5s;
-  filter: opacity(40%);
+  filter: brightness(100%);
 }
 .links-area a:hover {
   top: -3px;
-  filter: opacity(100%);
+  filter: brightness(130%);
 }
 
 hr {
