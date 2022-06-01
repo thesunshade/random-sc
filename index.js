@@ -3,8 +3,8 @@ import { ids } from "./ids.js";
 const randomButton = document.getElementById("get-random");
 const suttaArea = document.getElementById("sutta");
 
-const language = "en";
-const translator = "sujato";
+const language = "de";
+const translator = "sabbamitta";
 
 randomButton.addEventListener("click", e => {
   e.preventDefault();
