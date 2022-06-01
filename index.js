@@ -12,6 +12,7 @@ randomButton.addEventListener("click", e => {
 
 function buildSutta(slug) {
   slug = slug.toLowerCase().trim();
+  randomButton.innerText = "...";
   fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
     .then(response => response.json())
     .then(data => {
@@ -28,6 +29,7 @@ function buildSutta(slug) {
       suttaArea.innerHTML = scLink + html;
       const pageTile = document.querySelector("h1");
       document.title = pageTile.textContent;
+      randomButton.innerText = "Random Sutta";
     })
     .catch(error => {
       console.log("Something went wrong");
@@ -41,4 +43,5 @@ if (document.location.search) {
   suttaArea.innerHTML = `<div class="instructions">
   Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It's just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.
 </div>`;
+  randomButton.innerText = "Random Sutta";
 }

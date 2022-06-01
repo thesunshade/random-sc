@@ -38,6 +38,7 @@ body {
   border: none;
   top: 0;
   width: 10rem;
+  height: 3rem;
   margin: auto;
 }
 
@@ -66,12 +67,18 @@ body {
   /* letter-spacing: 0.5px; */
 }
 
-p {
+p,
+li {
   margin-bottom: 1.5rem;
   color: var(--text);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text);
   padding-top: 2rem;
 }
@@ -93,9 +100,9 @@ p.sc-link a img:hover {
   filter: opacity(100%);
 }
 
-/* span.eng-lang {
+span.verse-line {
   display: block;
-} */
+}
 
 .button-area {
   position: fixed;
