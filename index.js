@@ -4,8 +4,7 @@ const randomButton = document.getElementById("get-random");
 const suttaArea = document.getElementById("sutta");
 
 function buildSutta(slug) {
-  slug = slug.toLowerCase();
-
+  slug = slug.toLowerCase().trim();
   const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
     .then(response => response.json())
     .then(data => {
