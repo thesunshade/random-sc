@@ -8,31 +8,24 @@ function buildSutta(slug) {
 
   const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
     .then(response => response.json())
+    .then(data => {
+      const { html_text, translation_text, keys_order } = data;
+      let html = "";
+      keys_order.forEach(segment => {
+        if (translation_text[segment] === undefined) {
+          translation_text[segment] = "";
+        }
+        let [openHtml, closeHtml] = html_text[segment].split(/{}/);
+        html += `${openHtml}<span class="eng-lang" lang="en">${translation_text[segment]}</span>${closeHtml}\n\n`;
+      });
+      const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/en/sujato"><img height="20px" src="./images/favicon-sc.png"></a></p>`;
+      suttaArea.innerHTML = scLink + html;
+      const pageTile = document.querySelector("h1");
+      document.title = pageTile.textContent;
+    })
     .catch(error => {
       console.log("Something went wrong");
     });
-
-  // const suttaplex = fetch(`https://suttacentral.net/api/suttas/${slug}/sujato?lang=en&siteLanguage=en`).then(response =>
-  //   response.json()
-  // );
-
-  Promise.all([contentResponse]).then(responses => {
-    const [contentResponse] = responses;
-    const { html_text, translation_text, keys_order } = contentResponse;
-    let html = "";
-    keys_order.forEach(segment => {
-      if (translation_text[segment] === undefined) {
-        translation_text[segment] = "";
-      }
-      let [openHtml, closeHtml] = html_text[segment].split(/{}/);
-      // openHtml = openHtml.replace(/^<span class='verse-line'>/, "<br><span class='verse-line'>");
-      html += `${openHtml}<span class="eng-lang" lang="en">${translation_text[segment]}</span>${closeHtml}\n\n`;
-    });
-    const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/en/sujato"><img height="20px" src="./images/favicon-sc.png"></a></p>`;
-    suttaArea.innerHTML = scLink + html;
-    const pageTile = document.querySelector("h1");
-    document.title = pageTile.textContent;
-  });
 }
 
 // initialize
