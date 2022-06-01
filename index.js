@@ -5,7 +5,7 @@ const suttaArea = document.getElementById("sutta");
 
 function buildSutta(slug) {
   slug = slug.toLowerCase().trim();
-  const contentResponse = fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
+  fetch(`https://suttacentral.net/api/bilarasuttas/${slug}/sujato?lang=en`)
     .then(response => response.json())
     .then(data => {
       const { html_text, translation_text, keys_order } = data;
@@ -40,7 +40,7 @@ randomButton.addEventListener("click", e => {
   e.preventDefault();
   const randomNumber = Math.floor(Math.random() * ids.length);
   console.log(ids[randomNumber]);
-  buildSutta(ids[randomNumber]);
+  // buildSutta(ids[randomNumber]);
   document.location.search = "?" + ids[randomNumber];
 });
 
