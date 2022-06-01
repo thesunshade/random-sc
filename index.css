@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 :root {
-  --text: bisque;
-  --accent: rgb(208, 177, 139);
+  --text: #ffe4c4;
+  --accent: #d0b18b;
   --disabled: #61230c;
+  /* --background: white; */
   --background: #4b1704;
 }
 
@@ -145,11 +146,11 @@ br {
   position: relative;
   top: 0;
   transition: all ease 0.5s;
-  filter: brightness(0);
+  filter: brightness(100%);
 }
 .links-area a:hover {
   top: -3px;
-  filter: brightness(0);
+  filter: brightness(130%);
 }
 
 hr {
