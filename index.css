@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 :root {
   --text: bisque;
@@ -10,7 +10,7 @@
 body {
   margin: 1rem 3rem;
   background-color: var(--background);
-  font-family: "Source Serif Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #form {
@@ -31,7 +31,7 @@ body {
   transition: all ease 0.2s;
   background-color: var(--text);
   color: var(--background);
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.3rem;
   padding: 0.5rem;
   border: none;
@@ -49,9 +49,13 @@ body {
   margin: auto;
   max-width: 30rem;
   font-size: 0.8rem;
-  padding-top: 2rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+
   text-align: center;
+}
+
+.instructions a {
+  color: inherit;
 }
 
 .sutta {
