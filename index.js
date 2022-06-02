@@ -10,15 +10,15 @@ const clickInstruction = document.getElementById("click-instruction");
 // [ ] remove Google Tracking Script from end of index.html
 // [ ] update/translate specified tags in <head>  at top of index.html
 // [ ] change language and translator below as needed
-const language = "en";
-const translator = "sujato";
+const language = "de";
+const translator = "sabbamitta";
 // [ ] below needs to be translated when changing to a new language
 const disclaimer =
-  "Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It’s just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.";
-clickInstruction.innerText = "Click to get a";
-const buttonText = "Random Sutta";
-translatorInfo.innerText = "All translations are by Bhikkhu Sujato as found on SuttaCentral.net";
-getDaily.innerHTML = `Get a new sutta by email each day from <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">Daily.ReadingFaithfully.org</a>`;
+  "";
+clickInstruction.innerText = "Klicken für ein";
+const buttonText = "Zufälliges Sutta";
+translatorInfo.innerText = "Alle Übersetzungen sind von Sabbamitta, wie sie auf SuttaCentral.net vorliegen.";
+getDaily.innerHTML = ``;
 // end of building your own version
 
 randomButton.addEventListener("click", e => {
