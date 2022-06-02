@@ -14,7 +14,7 @@ const language = "de";
 const translator = "sabbamitta";
 // [ ] below needs to be translated when changing to a new language
 const disclaimer =
-  "Haftungsausschluss: Dieser Zufallsgenerator für Suttas soll nicht dafür verwendet werden, irgendwie vom Universum eine Antwort darauf zu erhalten, welchen Aspekt des Dhamma wir zum gegenwärtigen Zeitpunkt am dringendsten hören müssen. Er ist einfach nur Kode. Es ist besser, einen guten Dhammafreund zu fragen, über welche Dhammathemen man nachdenken soll.";
+  "";
 clickInstruction.innerText = "Klicken für ein";
 const buttonText = "Zufälliges Sutta";
 translatorInfo.innerText = "Alle Übersetzungen sind von Sabbamitta, wie sie auf SuttaCentral.net vorliegen.";
