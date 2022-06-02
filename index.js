@@ -2,9 +2,18 @@ import { ids } from "./ids.js";
 
 const randomButton = document.getElementById("get-random");
 const suttaArea = document.getElementById("sutta");
+const translatorInfo = document.getElementById("translator-info");
 
+// BUILDING YOUR OWN VERSION OF THIS APP
+// [ ] remove Google Tracking Script from end of index.html
+// [ ] update <meta> tags at top of index.html
+// [ ] change language and translator as needed
 const language = "en";
 const translator = "sujato";
+// [ ] below needs to be translated when changing to a new language
+const disclaimer = `Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It's just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.`;
+const buttonText = "Random Sutta";
+translatorInfo.innerText = "All translations are by Bhikkhu Sujato as found on SuttaCentral.net";
 
 randomButton.addEventListener("click", e => {
   e.preventDefault();
@@ -32,7 +41,7 @@ function buildSutta(slug) {
       suttaArea.innerHTML = scLink + html;
       const pageTile = document.querySelector("h1");
       document.title = pageTile.textContent;
-      randomButton.innerText = "Random Sutta";
+      randomButton.innerText = buttonText;
     })
     .catch(error => {
       console.log("Something went wrong");
@@ -44,8 +53,6 @@ function buildSutta(slug) {
 if (document.location.search) {
   buildSutta(document.location.search.replace("?", ""));
 } else {
-  suttaArea.innerHTML = `<div class="instructions">
-  Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It's just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.
-</div>`;
-  randomButton.innerText = "Random Sutta";
+  suttaArea.innerHTML = `<div class="instructions">${disclaimer}</div>`;
+  randomButton.innerText = buttonText;
 }
