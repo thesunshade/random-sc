@@ -8,8 +8,8 @@ const translatorInfo = document.getElementById("translator-info");
 // [ ] remove Google Tracking Script from end of index.html
 // [ ] update <meta> tags at top of index.html
 // [ ] change language and translator as needed
-const language = "en";
-const translator = "sujato";
+const language = "de";
+const translator = "sabbamitta";
 // [ ] below needs to be translated when changing to a new language
 const disclaimer =
   "Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It’s just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.";
