@@ -13,8 +13,7 @@ const clickInstruction = document.getElementById("click-instruction");
 const language = "de";
 const translator = "sabbamitta";
 // [ ] below needs to be translated when changing to a new language
-const disclaimer =
-  "";
+const disclaimer = "";
 clickInstruction.innerText = "Klicken für ein";
 const buttonText = "Zufälliges Sutta";
 translatorInfo.innerText = "Alle Übersetzungen sind von Sabbamitta, wie sie auf SuttaCentral.net vorliegen.";
@@ -25,7 +24,8 @@ randomButton.addEventListener("click", e => {
   e.preventDefault();
   const randomNumber = Math.floor(Math.random() * ids.length);
   console.log(ids[randomNumber]);
-  document.location.search = "?" + ids[randomNumber];
+  buildSutta(ids[randomNumber]);
+  history.pushState({ page: ids[randomNumber] }, "", `?${ids[randomNumber]}`);
 });
 
 function buildSutta(slug) {
