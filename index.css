@@ -123,10 +123,6 @@ header ul li {
   display: none;
 }
 
-li:first-child {
-  display: inherit;
-}
-
 @media only screen and (max-width: 975px) {
   body {
     margin: 1rem 0.5rem;
