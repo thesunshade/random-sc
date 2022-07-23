@@ -80,7 +80,12 @@ h4,
 h5,
 h6 {
   color: var(--text);
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+}
+
+.citation {
+  font-size: 1.1rem;
+  display: block;
 }
 
 p.sc-link {

@@ -30,6 +30,26 @@ randomButton.addEventListener("click", e => {
   history.pushState({ page: ids[randomNumber] }, "", `?${ids[randomNumber]}`);
 });
 
+function prettySlug(slug) {
+  slug = slug
+    .replace("dn", "DN ")
+    .replace("mn", "MN ")
+    .replace("sn", "SN ")
+    .replace("an", "AN ")
+    .replace("kp", "Kp ")
+    .replace("dhp", "Dhp ")
+    .replace("ud", "Ud ")
+    .replace("iti", "Iti ")
+    .replace("snp", "Snp ")
+    .replace("vv", "Vv ")
+    .replace("pv", "Pv ")
+    .replace("thag", "Thag ")
+    .replace("thig", "Thig ")
+    .replace("ja", "Ja ");
+
+  return slug;
+}
+
 function buildSutta(slug) {
   slug = slug.toLowerCase().trim();
   randomButton.innerText = "...";
@@ -49,6 +69,7 @@ function buildSutta(slug) {
       suttaArea.innerHTML = scLink + html;
       const pageTile = document.querySelector("h1");
       document.title = pageTile.textContent;
+      pageTile.innerHTML = `<span class="citation">${prettySlug(slug)}</span> ${pageTile.textContent}`;
       randomButton.innerText = buttonText;
     })
     .catch(error => {
