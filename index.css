@@ -165,3 +165,26 @@ hr {
   border: 0.5px solid rgba(208, 177, 139, 0.43);
   width: 70%;
 }
+
+/* Book Options */
+
+#book-buttons-area {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#book-buttons-area button {
+  border: solid 1.5px var(--accent);
+  background-color: var(--background);
+  color: var(--accent);
+}
+
+#book-buttons-area button.selected {
+  border: solid 1.5px var(--accent);
+  background-color: var(--accent);
+  color: var(--background);
+}
