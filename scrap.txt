@@ -1,0 +1,14 @@
+  bookButtons.forEach(bookButton => {
+    bookButton.addEventListener("click", e => {
+      const book = e.target.id;
+      e.target.classList.toggle("selected");
+      if (e.target.classList.contains("selected")) {
+        if (JSON.parse(localStorage.bookOptions).includes(book)) {
+          localStorage.bookOptions = JSON.stringify(JSON.parse(localStorage.bookOptions).filter(item => item !== book));
+        } else {
+          localStorage.bookOptions = JSON.stringify([...JSON.parse(localStorage.bookOptions), book]);
+        }
+      }
+    });
+  });
+}

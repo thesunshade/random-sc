@@ -1,4 +1,6 @@
-import { ids } from "./ids.js";
+import getIncludedIds from "./getIncludedIds.js";
+import bookOptions from "./bookOptions.js";
+import { prettySlug } from "./prettySlug.js";
 
 const randomButton = document.getElementById("get-random");
 const suttaArea = document.getElementById("sutta");
@@ -21,34 +23,20 @@ translatorInfo.innerText = "All translations are by Bhikkhu Sujato as found on S
 getDaily.innerHTML = `Get a new sutta by email each day from <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">Daily.ReadingFaithfully.org</a>`;
 // end of building your own version
 
+bookOptions();
+
 randomButton.addEventListener("click", e => {
   e.preventDefault();
+  const ids = getIncludedIds();
+  // console.log(ids);
   const randomNumber = Math.floor(Math.random() * ids.length);
-  console.log(ids[randomNumber]);
+  // console.log(randomNumber);
+  // console.log(ids[randomNumber]);
   // document.location.search = "?" + ids[randomNumber];
+  console.log(ids[randomNumber]);
   buildSutta(ids[randomNumber]);
-  history.pushState({ page: ids[randomNumber] }, "", `?${ids[randomNumber]}`);
+  history.pushState({ page: ids[randomNumber] }, "", `?q=${ids[randomNumber]}`);
 });
-
-function prettySlug(slug) {
-  slug = slug
-    .replace("dn", "DN ")
-    .replace("mn", "MN ")
-    .replace("sn", "SN ")
-    .replace("an", "AN ")
-    .replace("kp", "Kp ")
-    .replace("dhp", "Dhp ")
-    .replace("ud", "Ud ")
-    .replace("iti", "Iti ")
-    .replace("snp", "Snp ")
-    .replace("vv", "Vv ")
-    .replace("pv", "Pv ")
-    .replace("thag", "Thag ")
-    .replace("thig", "Thig ")
-    .replace("ja", "Ja ");
-
-  return slug;
-}
 
 function buildSutta(slug) {
   slug = slug.toLowerCase().trim();
@@ -80,7 +68,7 @@ function buildSutta(slug) {
 
 // initialize
 if (document.location.search) {
-  buildSutta(document.location.search.replace("?", ""));
+  buildSutta(document.location.search.replace("?q=", ""));
 } else {
   suttaArea.innerHTML = `<div class="instructions">${disclaimer}</div>`;
   randomButton.innerText = buttonText;
