@@ -92,6 +92,9 @@ p.sc-link {
   text-align: center;
   margin-bottom: 0rem !important;
   margin-top: 1rem !important;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 p.sc-link a img {
   filter: opacity(50%);

@@ -53,8 +53,9 @@ function buildSutta(slug) {
         let [openHtml, closeHtml] = html_text[segment].split(/{}/);
         html += `${openHtml}<span class="eng-lang" lang="en">${translation_text[segment]}</span>${closeHtml}\n\n`;
       });
-      const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/${language}/${translator}"><img height="20px" src="./images/favicon-sc.png"></a></p>`;
-      suttaArea.innerHTML = scLink + html;
+      const scLink = `<p class="sc-link"><a href="https://suttacentral.net/${slug}/${language}/${translator}"  title="Open in SuttaCentral.net"><img height="20px" src="./images/favicon-sc.png"></a>`;
+      const scLightLink = `<a href="https://sc.readingfaithfully.org/?q=${slug}"  title="Open in SC Light"><img height="15px" src="./images/favicon-sc-light-tan.png"></a></p>`;
+      suttaArea.innerHTML = scLink + scLightLink + html;
       const pageTile = document.querySelector("h1");
       document.title = pageTile.textContent;
       pageTile.innerHTML = `<span class="citation">${prettySlug(slug)}</span> ${pageTile.textContent}`;
