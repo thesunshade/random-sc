@@ -96,6 +96,7 @@ p.sc-link {
   gap: 0.5rem;
   justify-content: center;
 }
+
 p.sc-link a img {
   filter: opacity(50%);
   position: relative;
@@ -135,6 +136,7 @@ header ul li {
   body {
     margin: 1rem 0.5rem;
   }
+
   .button-area {
     right: 1px;
     top: 1px;
@@ -159,9 +161,20 @@ br {
   transition: all ease 0.5s;
   filter: brightness(100%);
 }
+
 .links-area a:hover {
   top: -3px;
   filter: brightness(130%);
+}
+
+a.labs {
+  rotate: 0deg;
+  transition: rotate ease 1s;
+}
+
+a.labs:hover {
+  rotate: 55deg;
+  top: 0px !important;
 }
 
 hr {

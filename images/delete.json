@@ -1,0 +1,370 @@
+[
+    {
+        "uid": "af",
+        "name": "Afrikaans",
+        "iso_code": "af",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ar",
+        "name": "Arabic",
+        "iso_code": "ar",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "au",
+        "name": "Aurebesh",
+        "iso_code": "au",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "bn",
+        "name": "Bengali",
+        "iso_code": "bn",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ca",
+        "name": "Català",
+        "iso_code": "ca",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "cs",
+        "name": "Čeština",
+        "iso_code": "cs",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "de",
+        "name": "Deutsch",
+        "iso_code": "de",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 54
+    },
+    {
+        "uid": "en",
+        "name": "English",
+        "iso_code": "en",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 100
+    },
+    {
+        "uid": "es",
+        "name": "Español",
+        "iso_code": "es",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "fa",
+        "name": "Farsi",
+        "iso_code": "fa",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "fr",
+        "name": "Français",
+        "iso_code": "fr",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 17
+    },
+    {
+        "uid": "he",
+        "name": "Hebrew",
+        "iso_code": "he",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "hr",
+        "name": "hrvatski",
+        "iso_code": "hr",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "haw",
+        "name": "ʻŌlelo Hawaiʻi",
+        "iso_code": "haw",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "id",
+        "name": "Indonesian",
+        "iso_code": "id",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "it",
+        "name": "Italiano",
+        "iso_code": "it",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "kln",
+        "name": "Klingon",
+        "iso_code": "kln",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "la",
+        "name": "Latine",
+        "iso_code": "la",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "lt",
+        "name": "Lietuvių Kalba",
+        "iso_code": "lt",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "hu",
+        "name": "Magyar",
+        "iso_code": "hu",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "nl",
+        "name": "Nederlands",
+        "iso_code": "nl",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "no",
+        "name": "Norsk",
+        "iso_code": "no",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "pl",
+        "name": "Polski",
+        "iso_code": "pl",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 2
+    },
+    {
+        "uid": "pt",
+        "name": "Português",
+        "iso_code": "pt",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 99
+    },
+    {
+        "uid": "ro",
+        "name": "Română",
+        "iso_code": "ro",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "sld",
+        "name": "Saarländisch",
+        "iso_code": "sld",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ev",
+        "name": "Sindarin",
+        "iso_code": "ev",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "sk",
+        "name": "slovenčina",
+        "iso_code": "sk",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "sl",
+        "name": "Slovenščina",
+        "iso_code": "sl",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "sr",
+        "name": "Srpski",
+        "iso_code": "sr",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "fi",
+        "name": "Suomi",
+        "iso_code": "fi",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "sv",
+        "name": "Svenska",
+        "iso_code": "sv",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "vi",
+        "name": "Tiếng Việt",
+        "iso_code": "vi",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 8
+    },
+    {
+        "uid": "vu",
+        "name": "Vulcan",
+        "iso_code": "vu",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ru",
+        "name": "ру́сский язы́к",
+        "iso_code": "ru",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "mr",
+        "name": "मराठी",
+        "iso_code": "mr",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "hi",
+        "name": "हिन्दी",
+        "iso_code": "hi",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "gu",
+        "name": "ગુજરાતી",
+        "iso_code": "gu",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ta",
+        "name": "தமிழ்",
+        "iso_code": "ta",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "kan",
+        "name": "ಕನ್ನಡ",
+        "iso_code": "kan",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "si",
+        "name": "සිංහල",
+        "iso_code": "si",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "th",
+        "name": "ไทย",
+        "iso_code": "th",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "my",
+        "name": "မြန်မာဘာသာ",
+        "iso_code": "my",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "ko",
+        "name": "한국어/조선말",
+        "iso_code": "ko",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "jpn",
+        "name": "日本語",
+        "iso_code": "jpn",
+        "is_root": false,
+        "localized": false,
+        "localized_percent": 0
+    },
+    {
+        "uid": "zh",
+        "name": "汉语",
+        "iso_code": "zh",
+        "is_root": false,
+        "localized": true,
+        "localized_percent": 12
+    }
+]
