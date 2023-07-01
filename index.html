@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="theme-color" content="#381104">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <head>
+    <meta name="theme-color" content="#381104" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
     <!--CHANGE WHEN CHANGING LANGUAGE-->
     <title>Random Sutta Getter</title>
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Random Sutta Getter | ReadingFaithfully" />
     <meta property="og:description" content="Enjoy a Random Sutta" />
-    <meta property="og:image" itemprop="image"
-        content="https://r.readingfaithfully.org/images/featuredimage-random-brown.png" />
+    <meta property="og:image" itemprop="image" content="https://r.readingfaithfully.org/images/featuredimage-random-brown.png" />
     <!--CHANGE WHEN CHANGING URL-->
     <meta property="og:url" content="https://r.readingfaithfully.org/" />
     <meta property="og:site_name" content="r.ReadingFaithfully.org" />
@@ -23,70 +21,59 @@
     <!--END CHANGES-->
     <meta property="og:type" content="article" />
     <meta name="twitter:card" content="summary_large_image" />
-</head>
+  </head>
 
-<body>
-    <form id="form">
+  <body>
+    <div class="main">
+      <form id="form" class="form">
         <div class="mini-instruction" id="click-instruction">.</div>
         <button id="get-random" class="get-random"></button>
-
-    </form>
-    <div id="sutta" class="sutta">
+      </form>
+      <div id="sutta" class="sutta"></div>
     </div>
-    <hr>
-    <div id="book-buttons-area"></div>
-    <div class="instructions" id="get-daily"></div>
-    <div class="links-area" style="text-align: center;">
+    <div class="footer">
+      <hr />
+      <div class="instructions">Choose books to include in the pool</div>
+      <div id="book-buttons-area" class="book-buttons-area"></div>
+      <div class="instructions" id="translator-info"></div>
+      <div class="instructions" id="get-daily"></div>
+      <div class="links-area" style="text-align: center">
         <!--RF MAIN-->
-        <a href="http://readingfaithfully.org" title="Support for your sutta readng practice" rel="noreferrer"
-            target="_blank"><img width="20px" alt="ReadingFaithfully.org icon" src="./images/favicon-rf-tan.png"></a>
+        <a href="http://readingfaithfully.org" title="Support for your sutta readng practice" rel="noreferrer" target="_blank"><img width="20px" alt="ReadingFaithfully.org icon" src="./images/favicon-rf-tan.png" /></a>
         <!--DAILY-->
-        <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank"><img
-                width="20px" alt="Daily ReadingFaithfully.org icon" src="./images/favicon-drf-tan.png"></a>
+        <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank"><img width="20px" alt="Daily ReadingFaithfully.org icon" src="./images/favicon-drf-tan.png" /></a>
         <!--CITATION HELPER-->
-        <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank"><img
-                width="20px" src="./images/favicon-citaton-helper-tan.png" alt="Citation Lookup tool icon"></a>
+        <a href="https://sutta.readingfaithfully.org" title="Citation Lookup Tool" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-citaton-helper-tan.png" alt="Citation Lookup tool icon" /></a>
         <!--NAME SEARCH-->
-        <a href="https://name.readingfaithfully.org" title="Search for suttas by name" rel="noreferrer"
-            target="_blank"><img width="20px" src="./images/favicon-name-tan.png" alt="Sutta Name Search icon"></a>
+        <a href="https://name.readingfaithfully.org" title="Search for suttas by name" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-name-tan.png" alt="Sutta Name Search icon" /></a>
         <!--PED-->
-        <a href="https://ped.readingfaithfully.org" title="A lightweight interface for the PED" rel="noreferrer"
-            target="_blank"><img width="20px" src="./images/favicon-ped-tan.png"
-                alt="SuttaCentral.org Lightweight interface icon"></a>
+        <a href="https://ped.readingfaithfully.org" title="A lightweight interface for the PED" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-ped-tan.png" alt="SuttaCentral.org Lightweight interface icon" /></a>
         <!--DPPN-->
-        <a href="https://dppn.readingfaithfully.org" title="A lightweight interface the Dictionary of Pali Proper Names"
-            rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-dppn-tan.png"
-                alt="DPPN search icon"></a>
+        <a href="https://dppn.readingfaithfully.org" title="A lightweight interface the Dictionary of Pali Proper Names" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-dppn-tan.png" alt="DPPN search icon" /></a>
         <!--SC LIGHT-->
-        <a href="https://sc.readingfaithfully.org" title="An ultra lightweight interface for SuttaCentral.net"
-            rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-sc-light-tan.png"
-                alt="SC Light icon"></a>
+        <a href="https://sc.readingfaithfully.org" title="An ultra lightweight interface for SuttaCentral.net" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-sc-light-tan.png" alt="SC Light icon" /></a>
         <!--Labs-->
-        <a href="https://readingfaithfully.org/lab/" title="Other tools under development" rel="noreferrer"
-            target="_blank" class="labs">
-            <img class="icon" width="19px" src="./images/favicon-labs-tan.png" style="position: relative ; top: 1px"
-                alt="Labs icon" />
+        <a href="https://readingfaithfully.org/lab/" title="Other tools under development" rel="noreferrer" target="_blank" class="labs">
+          <img class="icon" width="19px" src="./images/favicon-labs-tan.png" style="position: relative; top: 1px" alt="Labs icon" />
         </a>
         <!--GITHUB-->
-        <a href="https://github.com/thesunshade/random-sc#readme" title="The source code for this site" rel="noreferrer"
-            target="_blank"><img width="20px" src="./images/favicon-GitHub-tan.png" alt="GitHub icon"></a>
+        <a href="https://github.com/thesunshade/random-sc#readme" title="The source code for this site" rel="noreferrer" target="_blank"><img width="20px" src="./images/favicon-GitHub-tan.png" alt="GitHub icon" /></a>
+      </div>
     </div>
-    <div class="instructions" id="translator-info"></div>
+
     <script type="module" src="index.js"></script>
     <script type="module" src="./index.js"></script>
-    <div class="instructions"><a rel="me" href="https://mastodon.social/@ReadingFaithfully_org">Visit ReadingFaithfully
-            on
-            Mastodon</a></div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120551088-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-120551088-1');
+      gtag("config", "UA-120551088-1");
     </script>
-</body>
-
+  </body>
 </html>

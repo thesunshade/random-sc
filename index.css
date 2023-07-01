@@ -8,17 +8,30 @@
   --background: #4b1704;
 }
 
+html,
 body {
-  margin: 1rem 3rem;
-  background-color: var(--background);
-  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
-#form {
+body {
+  background-color: var(--background);
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.form {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .mini-instruction {
@@ -51,7 +64,7 @@ body {
   margin: auto;
   max-width: 30rem;
   font-size: 0.8rem;
-  padding-top: 1rem;
+  margin-top: 8px;
 
   text-align: center;
 }
@@ -134,7 +147,7 @@ header ul li {
 
 @media only screen and (max-width: 975px) {
   body {
-    margin: 1rem 0.5rem;
+    /* margin: 1rem 0.5rem; */
   }
 
   .button-area {
@@ -152,7 +165,7 @@ br {
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .links-area a {
@@ -184,8 +197,8 @@ hr {
 
 /* Book Options */
 
-#book-buttons-area {
-  margin: auto;
+.book-buttons-area {
+  margin: 16px auto;
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -193,13 +206,13 @@ hr {
   flex-wrap: wrap;
 }
 
-#book-buttons-area button {
+.book-buttons-area button {
   border: solid 1.5px var(--accent);
   background-color: var(--background);
   color: var(--accent);
 }
 
-#book-buttons-area button.selected {
+.book-buttons-area button.selected {
   border: solid 1.5px var(--accent);
   background-color: var(--accent);
   color: var(--background);
